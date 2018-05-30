@@ -1,0 +1,190 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5491,        182]
+NotebookOptionsPosition[      5074,        166]
+NotebookOutlinePosition[      5410,        181]
+CellTagsIndexPosition[      5367,        178]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[Sigma]", "1"], "^", "k"}], " ", 
+      SubscriptBox["b", "2"], " ", "for", " ", "k"}], "=", "0"}], ",", "1", 
+    ",", "2", ",", "3"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"B0", " ", "=", " ", 
+     SubscriptBox["b", "2"]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"B1", "=", " ", 
+     RowBox[{
+      RowBox[{"s", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", "1"}], ")"}]}], 
+      SubscriptBox["b", "1"]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"B2", "=", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "n"}], ")"}]}], "t", " ", 
+       SubscriptBox["w", 
+        RowBox[{"1", ",", "2"}]]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"s", "^", 
+          RowBox[{"(", 
+           RowBox[{"-", "2"}], ")"}]}]}], ")"}], 
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "1"}], ")"}]}], 
+       SubscriptBox["b", "1"]}], "+", 
+      RowBox[{
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "2"}], ")"}]}], 
+       SubscriptBox["b", "2"]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"B3", "=", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "n"}], ")"}]}], "t", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"s", "^", 
+          RowBox[{"(", 
+           RowBox[{"-", "2"}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"s", "^", 
+           RowBox[{"(", 
+            RowBox[{"-", "4"}], ")"}]}], 
+          RowBox[{"q", "^", "2"}]}]}], ")"}], " ", 
+       SubscriptBox["w", 
+        RowBox[{"1", ",", "2"}]]}], "+", 
+      RowBox[{
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "1"}], ")"}]}], 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"s", "^", 
+          RowBox[{"(", 
+           RowBox[{"-", "2"}], ")"}]}], "+", 
+         RowBox[{"s", "^", 
+          RowBox[{"(", 
+           RowBox[{"-", "4"}], ")"}]}]}], ")"}], 
+       SubscriptBox["b", "1"]}], "+", 
+      RowBox[{
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "2"}], ")"}]}], 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"s", "^", 
+          RowBox[{"(", 
+           RowBox[{"-", "2"}], ")"}]}]}], ")"}], 
+       SubscriptBox["b", "2"]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Solutions", " ", "for", " ", "the", " ", "equation"}], " ", 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"x", " ", "=", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", 
+      RowBox[{"s", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", "2"}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "4"}], ")"}]}], 
+       RowBox[{"q", "^", "2"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"y", "=", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "2"}], ")"}]}]}], "+", 
+      RowBox[{
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "4"}], ")"}]}], 
+       RowBox[{"q", "^", "2"}]}], "-", 
+      RowBox[{
+       RowBox[{"s", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "6"}], ")"}]}], 
+       RowBox[{"q", "^", "2"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"z", "=", 
+     RowBox[{
+      RowBox[{"s", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", "6"}], ")"}]}], 
+      RowBox[{"q", "^", "2"}]}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "Verification", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"B3", " ", "+", " ", 
+     RowBox[{"x", " ", "B2"}], " ", "+", " ", 
+     RowBox[{"y", " ", "B1"}], " ", "+", " ", 
+     RowBox[{"z", " ", 
+      SubscriptBox["b", "2"]}]}], "//", "Simplify"}]}]}]], "Input",
+ CellChangeTimes->{{3.736673509939715*^9, 3.736673660767116*^9}, {
+  3.7366736919888897`*^9, 3.7366736959098988`*^9}, {3.736673926340351*^9, 
+  3.736674012681723*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"2fe1f2c1-b1c9-4e05-aacd-f19777730294"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.736674010229576*^9, 3.7366740131970778`*^9}},
+ CellLabel->"Out[24]=",ExpressionUUID->"33890497-85a6-4b3e-b0a7-bf56f4c9c8ba"]
+}, Open  ]]
+},
+WindowSize->{896, 820},
+WindowMargins->{{229, Automatic}, {Automatic, 118}},
+FrontEndVersion->"11.3 for Linux x86 (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4300, 137, 312, "Input",ExpressionUUID->"2fe1f2c1-b1c9-4e05-aacd-f19777730294"],
+Cell[4883, 161, 175, 2, 35, "Output",ExpressionUUID->"33890497-85a6-4b3e-b0a7-bf56f4c9c8ba"]
+}, Open  ]]
+}
+]
+*)
+
